@@ -45,6 +45,40 @@
 
 <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
+<h3>
+<a name="step2" class="anchor" href="#step2"><span class="octicon octicon-link"></span></a>Step two: Get cjdns</h3>
+
+<h4>
+<a name="what-is-cjdns" class="anchor" href="#what-is-cjdns"><span class="octicon octicon-link"></span></a>What is cjdns?</h4>
+
+<p>Cjdns is a routing engine designed for security, scalability, speed and ease-of-use. The dream: You type ./cjdns and give it an interface which connects another node and it gives you an IPv6 address (generated from a public encryption key) and a virtual network card (TUN device) through which you can connect to the Cjdns network you have chosen. For example, the largest current Cjdns network is called Hyperboria.</p>
+
+<h4>
+<a name="how-cjdns-works" class="anchor" href="#how-cjdns-works"><span class="octicon octicon-link"></span></a>How cjdns works</h4>
+
+<p>In order to understand how Cjdns works, it is important to understand how the existing Internet works. When you send a packet from your computer to another, each router it passes through reads the address on the packet and decides where to send it next. In a Cjdns network, a packet goes to a router and the router labels the packet with directions to a router which will be able to best handle it. That is, a router which is near by in physical space and has an address which is numerically close to the destination address of the packet. The additional directions for the packet allow it to go through numberous routers with minimal handling. Each router just reads the label and bounces the packet wherever the next bits in the label tells it to. Routers have a responsibility to "keep in touch" with other routers that are numerically close to their address and also routers which are physically close to them.</p>
+
+<p>The Cjdns routing engine is a modified implementation of the Kademlia DHT design.</p>
+
+<p>Please read the <a href="https://github.com/cjdelisle/cjdns/raw/master/rfcs/Whitepaper.md">whitepaper</a> for more information.</p>
+
+<h4>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install it</h4>
+
+<p>Note: Installing cjdns requires some knowledge of GNU/Linux. If you don't understand the command line and basic networking, you should prepare to study those first before attempting to use this software. Cjdns is alpha software that may not be fully functional or build properly at all times. People in the IRC are friendly and willing to help, but probably do not have time to teach you more basic topics so you can use Cjdns. At this point, the goal is for you to test Cjdns. [editors note: figure out how to do an indent-y thing here]</p>
+
+<p>Please see <a href="https://github.com/cjdelisle/cjdns#how-to-install-cjdns">the official install guide</a> to build and install cjdns.</p>
+
+<h3>
+<a name="step3" class="anchor" href="#step3"><span class="octicon octicon-link"></span></a>Step three: Find peers</h3>
+
+<p>Come by the IRC and ask for nearby peers. Once you've got the peering details, follow <a href="https://wiki.projectmeshnet.org/How_To_Add_Peers">this guide</a> to add them to your configuration file.</p>
+
+<h3>
+<a name="more-info" class="anchor" href="#more-info"><span class="octicon octicon-link"></span></a>More information</h3>
+
+<p>You can check the <a href="https://wiki.projectmeshnet.org/Getting_started">official getting started guide</a> on the <a href="https://wiki.projectmeshnet.org">wiki</a> for more information on getting started. In addition, we are more than happy to answer questions in IRC.</p>
+
       </section>
     </div>
 
